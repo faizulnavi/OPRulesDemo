@@ -46,8 +46,10 @@
     <Compile Include="Entity\Book.cs" />
     <Compile Include="Entity\Membership.cs" />
     <Compile Include="Entity\NonPhysicalProduct.cs" />
+    <Compile Include="Entity\Others.cs" />
     <Compile Include="Entity\PhysicalProduct.cs" />
     <Compile Include="Entity\Product.cs" />
+    <Compile Include="Entity\ProductType.cs" />
     <Compile Include="Entity\Upgrade.cs" />
     <Compile Include="Entity\Videos.cs" />
     <Compile Include="Program.cs" />
