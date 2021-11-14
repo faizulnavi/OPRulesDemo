@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OPRulesDemo.Entity
 {
-    class Orders
+    public class Orders
     {
         public static Product CompleteOrder(string[] input)
         {
