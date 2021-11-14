@@ -47,6 +47,7 @@
     <Compile Include="Entity\NonPhysicalProduct.cs" />
     <Compile Include="Entity\PhysicalProduct.cs" />
     <Compile Include="Entity\Product.cs" />
+    <Compile Include="Entity\Videos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
