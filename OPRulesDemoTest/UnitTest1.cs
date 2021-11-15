@@ -49,5 +49,17 @@ namespace OPRulesDemoTest
 
         }
 
+        [TestMethod]
+        public void ShouldReturnforBookSlipOnly()
+        {
+            var result = Orders.CompleteOrder(new string[] { "Book", "Design Patterns" });
+            Assert.AreEqual("Design Patterns", result.Name);
+            Assert.AreEqual("Generate a packing slip for shipping.", result.CheckoutProcess[0]);
+            Assert.AreEqual("Commission generated for agent", result.CheckoutProcess[1]);
+            Assert.AreEqual("Create a duplicate packing slip for the royalty department.", result.CheckoutProcess[2]);
+            Assert.AreEqual(3, result.CheckoutProcess.Count);
+
+        }
+
     }
 }
