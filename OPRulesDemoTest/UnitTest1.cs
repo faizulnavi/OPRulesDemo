@@ -37,5 +37,17 @@ namespace OPRulesDemoTest
 
         }
 
+        [TestMethod]
+        public void ShouldReturnforMembershipSlip()
+        {
+            var result = Orders.CompleteOrder(new string[] { "Membership", "Test" });
+            Assert.IsNull(result.Name);
+            Assert.AreEqual("Generate a packing slip for shipping.", result.CheckoutProcess[0]);
+            Assert.AreEqual("Membership Activated", result.CheckoutProcess[1]);
+            Assert.AreEqual("Mail Sent to Customer", result.CheckoutProcess[2]);
+            Assert.AreEqual(3, result.CheckoutProcess.Count);
+
+        }
+
     }
 }
