@@ -11,7 +11,7 @@ namespace OPRulesDemo.Entity
         public override void GenerateCustomerSlip()
         {
             CheckoutProcess.Add("Generate a packing slip for shipping.");
-            Console.WriteLine("Generate a packing slip for shipping.");
+            Console.WriteLine("Generate a packing slip for shipping");
         }
         public virtual void SendEmail()
         {
