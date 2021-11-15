@@ -61,5 +61,15 @@ namespace OPRulesDemoTest
 
         }
 
+        [TestMethod]
+        public void ShouldReturnOther()
+        {
+            var result = Orders.CompleteOrder(new string[] { "other", "ABC" });
+            Assert.AreEqual("ABC", result.Name);
+            Assert.AreEqual("Generate a packing slip for shipping.", result.CheckoutProcess[0]);
+            Assert.AreEqual("Commission generated for agent", result.CheckoutProcess[1]);
+            Assert.AreEqual(2, result.CheckoutProcess.Count);
+        }
+
     }
 }
